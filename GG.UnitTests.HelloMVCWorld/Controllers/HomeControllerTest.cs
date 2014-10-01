@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using GG.Web.HelloMVCWorld;
+﻿using System.Web.Mvc;
 using GG.Web.HelloMVCWorld.Controllers;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace GG.UnitTests.HelloMVCWorld.Controllers
+namespace GG.HelloMVCWorld.Test.Unit.Controllers
 {
-    [TestClass]
+    [NUnit.Framework.TestFixture]
     public class HomeControllerTest
     {
-        [TestMethod]
+        [NUnit.Framework.TestCase]
         public void Index()
         {
             // Arrange
@@ -25,7 +20,7 @@ namespace GG.UnitTests.HelloMVCWorld.Controllers
             Assert.AreEqual("Modify this template to jump-start your ASP.NET MVC application.", result.ViewBag.Message);
         }
 
-        [TestMethod]
+        [NUnit.Framework.TestCase]
         public void About()
         {
             // Arrange
@@ -38,7 +33,7 @@ namespace GG.UnitTests.HelloMVCWorld.Controllers
             Assert.IsNotNull(result);
         }
 
-        [TestMethod]
+        [NUnit.Framework.TestCase]
         public void Contact()
         {
             // Arrange

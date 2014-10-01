@@ -1,0 +1,25 @@
+DEPENDENCIES
+  chocolatey
+    git: https://github.com/chocolatey/chocolatey-cookbook.git
+    revision: 299caaf9a5f3e5e6a7071f5bef678bfa723a8c17
+  gg-web-hellomvcworld
+    path: .
+    metadata: true
+  iis
+  minitest-handler
+  windows
+
+GRAPH
+  chef_handler (1.1.6)
+  chocolatey (0.2.1)
+    windows (~> 1.31)
+  gg-web-hellomvcworld (0.41001.1553)
+    chocolatey (>= 0.0.0)
+    iis (>= 0.0.0)
+    windows (>= 0.0.0)
+  iis (2.1.5)
+    windows (>= 1.2.6)
+  minitest-handler (1.3.2)
+    chef_handler (>= 0.0.0)
+  windows (1.34.6)
+    chef_handler (>= 0.0.0)

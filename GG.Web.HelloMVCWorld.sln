@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GG.Web.HelloMVCWorld", "GG.Web.HelloMVCWorld\GG.Web.HelloMVCWorld.csproj", "{69949C61-459C-4D23-BC5B-16AE4F959950}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GG.UnitTests.HelloMVCWorld", "GG.UnitTests.HelloMVCWorld\GG.UnitTests.HelloMVCWorld.csproj", "{1D4C083B-7F36-4E7A-ABC8-81CA3BEB54FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GG.HelloMVCWorld.Test.Unit", "GG.UnitTests.HelloMVCWorld\GG.HelloMVCWorld.Test.Unit.csproj", "{1D4C083B-7F36-4E7A-ABC8-81CA3BEB54FF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{9EDFCA41-5C79-477F-A8BB-F2C759E2E47B}"
 	ProjectSection(SolutionItems) = preProject
@@ -12,18 +12,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{9EDFCA41
 		GG.Web.HelloMVCWorld.nuspec = GG.Web.HelloMVCWorld.nuspec
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A96DC29C-578E-415D-B1C5-44804C9CA843}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Deployed|Any CPU = Deployed|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{69949C61-459C-4D23-BC5B-16AE4F959950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{69949C61-459C-4D23-BC5B-16AE4F959950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69949C61-459C-4D23-BC5B-16AE4F959950}.Deployed|Any CPU.ActiveCfg = Deployed|Any CPU
+		{69949C61-459C-4D23-BC5B-16AE4F959950}.Deployed|Any CPU.Build.0 = Deployed|Any CPU
 		{69949C61-459C-4D23-BC5B-16AE4F959950}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69949C61-459C-4D23-BC5B-16AE4F959950}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1D4C083B-7F36-4E7A-ABC8-81CA3BEB54FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D4C083B-7F36-4E7A-ABC8-81CA3BEB54FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D4C083B-7F36-4E7A-ABC8-81CA3BEB54FF}.Deployed|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D4C083B-7F36-4E7A-ABC8-81CA3BEB54FF}.Deployed|Any CPU.Build.0 = Debug|Any CPU
 		{1D4C083B-7F36-4E7A-ABC8-81CA3BEB54FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D4C083B-7F36-4E7A-ABC8-81CA3BEB54FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

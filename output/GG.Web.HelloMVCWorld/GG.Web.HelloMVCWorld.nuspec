@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>GG.Web.HelloMVCWorld</id>
+    <title>GG.Web.HelloMVCWorld</title>
+    <version>0.41001.1625</version>
+    <authors>JustGiving</authors>
+    <owners>JustGiving</owners>
+    <summary>GG.Web.HelloMVCWorld</summary>
+    <description>Simple RestSharp wrapper to allow client applications to consume the Justgiving Example Write API.</description>
+    <projectUrl>https://github.com/iamijaz/GG.Web.HelloMVCWorld</projectUrl>
+    <tags>tags</tags>
+    <licenseUrl>https://github.com/iamijaz/GG.Web.HelloMVCWorld</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>
+    </releaseNotes>
+    <copyright>JustGiving 2014</copyright>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="_PublishedWebsites\**\*.*" target="application" exclude="_PublishedWebsites\GG.Web.ExampleApplication\tools\*.*;_PublishedWebsites\GG.Web.ExampleApplication\bin\*.ps1;_PublishedWebsites\GG.Web.ExampleApplication\*.transformed" />
+    <file src="tools\*.*" target="tools" />
+  </files>
+</package>

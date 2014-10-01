@@ -1,0 +1,34 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box_url = "http://box.dev.justgiving.service/win2012.box"
+  config.vm.box = "win2012"
+  config.winrm.username = "vagrant"
+  config.winrm.password = "vagrant"  
+  config.vm.guest = :windows  
+  config.windows.halt_timeout = 15
+  #config.omnibus.chef_version = :latest
+    
+    # Port forward WinRM and RDP
+  config.vm.network :forwarded_port, guest: 3389, host: 13389
+  config.vm.network :forwarded_port, guest: 5985, host: 15985
+
+  config.berkshelf.enabled = true
+
+   config.vm.provider :virtualbox do |vb|
+     # Don't boot with headless mode
+     vb.gui = true
+     # Use VBoxManage to customize the VM. For example to change memory:
+     vb.customize ["modifyvm", :id, "--memory", "2048"]
+   end
+
+  config.vm.provision :chef_solo do |chef|
+    chef.log_level                           = :info
+    chef.data_bags_path                      = './data_bags'
+    chef.environments_path                   = './environments'
+    chef.environment                         = 'dev'
+    chef.run_list = ["recipe[chef_handler]","recipe[gg-web-hellomvcworld::default]","recipe[minitest-handler]"]
+  end
+end

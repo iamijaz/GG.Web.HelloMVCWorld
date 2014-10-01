@@ -1,0 +1,21 @@
+{
+  "id": "settings",
+  "AdminPassword": {
+    "encrypted_data": "PGUlD82ggLso+x/GHKjuuE7oDEYKDgES8G2ehatoAhlDqeJnVMBr08O+plea\num2HV69fT7Dr6SDjpZvXSYplWA==\n",
+    "iv": "QWskljKrTrJL/BptEC+Mow==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "AWSAccessKey": {
+    "encrypted_data": "FCQI/SxG/rGi7XDDsZ5s+db+PCs6hC6JdEHdaQ+JOe1qpSK3AWCRHC5OoFZS\n8mz5\n",
+    "iv": "ESYcFJi5i0qFp4Nsf7Ibnw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "AWSSecretKey": {
+    "encrypted_data": "0Aa+AywxAIXyQ6AqyPB8oaunQnmNwYJ5DCljERnmmsOQL2KWr8b5vKWEqR8a\ncbQ/KR7Q45JJaTH7jY8worCNJQ==\n",
+    "iv": "fCbUWc5HTFYccijSPbSD2A==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

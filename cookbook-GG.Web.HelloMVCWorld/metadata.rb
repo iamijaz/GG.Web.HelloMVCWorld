@@ -1,0 +1,10 @@
+name             'gg-web-hellomvcworld'
+maintainer       'JG Tech'
+maintainer_email 'alldevelopersuk@justgiving.com'
+license          'All rights reserved'
+description      'Just giving personilized home'
+version			 '0.41001.1625'
+
+depends 'chocolatey'
+depends 'windows'
+depends 'iis'
