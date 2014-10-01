@@ -2,11 +2,11 @@
 # Copy this file to start making use of the shared build script. Edit the ApplicationName, ChocolateyPackages and NugetPackages.
 # Confluence documentation: https://justgiving.atlassian.net/wiki/display/DD/A%3A+Building+and+Testing+with+Shared+Build+Script+and+TeamCity
 
-$ApplicationName = "GG.Example.Microservice"
+$ApplicationName = "GG.Web.HelloMVCWorld"
 
-#$ChocolateyPackages = @(
-#	"GG.Example.Microservice.Web"
-#)
+$ChocolateyPackages = @(
+	"GG.Web.HelloMVCWorld"
+)
 
 #$NugetPackages = @(
 #	"GG.Example.Microservice.Client"
@@ -19,4 +19,4 @@ $webClient.DownloadFile('https://api.github.com/repos/justgiving/GG.BuildScript/
 
 . .\bootstrap.ps1
 
-Invoke-Build -Task $task -ApplicationName $ApplicationName #-ChocolateyPackages $ChocolateyPackages -NugetPackages $NugetPackages
+Invoke-Build -Task $task -ApplicationName $ApplicationName -ChocolateyPackages $ChocolateyPackages #-NugetPackages $NugetPackages

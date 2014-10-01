@@ -5,6 +5,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GG.Web.HelloMVCWorld", "GG.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GG.UnitTests.HelloMVCWorld", "GG.UnitTests.HelloMVCWorld\GG.UnitTests.HelloMVCWorld.csproj", "{1D4C083B-7F36-4E7A-ABC8-81CA3BEB54FF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{9EDFCA41-5C79-477F-A8BB-F2C759E2E47B}"
+	ProjectSection(SolutionItems) = preProject
+		build.cmd = build.cmd
+		build.ps1 = build.ps1
+		GG.Web.HelloMVCWorld.nuspec = GG.Web.HelloMVCWorld.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
